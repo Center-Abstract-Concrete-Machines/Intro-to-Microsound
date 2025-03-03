@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1213.0, 610.0 ],
+		"rect" : [ 134.0, 134.0, 1213.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1208,8 +1208,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.5, 171.0, 150.0, 255.0 ],
-									"text" : "an easy way to step tones is to use MIDI values (sorry, buchla, partsch, la monte..., we will get out of this zone in later weeks). Yes, this means 12-tone scale. so we can multiple by 12 and a range of -1 to 1 becomes -12 to 12. Let's add some values to that so we can get closer to middle C, then we round down to the nearest tone.\n\nThen, [mtof] operator transforms a MIDI value into a Hz frequency that [phasor] will understand."
+									"patching_rect" : [ 362.5, 171.0, 153.0, 255.0 ],
+									"text" : "an easy way to step tones is to use MIDI values (sorry, Buchla, Partch, la monte..., we will get out of this zone in later weeks). Yes, this means 12-tone scale. so we can multiple by 12 and a range of -1 to 1 becomes -12 to 12. Let's add some values to that so we can get closer to middle C, then we round down to the nearest tone.\n\nThen, [mtof] operator transforms a MIDI value into a Hz frequency that [phasor] will understand."
 								}
 
 							}
@@ -3199,29 +3199,29 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
-				"patcherrelativepath" : "../Documents/_CCAM/Design/_logos",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
+				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}

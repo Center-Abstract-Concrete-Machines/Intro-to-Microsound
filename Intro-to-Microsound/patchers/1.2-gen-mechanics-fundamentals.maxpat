@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1213.0, 610.0 ],
+		"rect" : [ 134.0, 134.0, 874.0, 641.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -285,7 +285,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 207.0, 107.0, 150.0, 48.0 ],
-									"presentation_linecount" : 3,
 									"text" : "reset might still be useful for coupled oscillators, dephasing, etc"
 								}
 
@@ -552,7 +551,6 @@
 					}
 ,
 					"patching_rect" : [ 42.0, 461.0, 159.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "gen~ @title vco-type-phasor"
 				}
 
@@ -800,8 +798,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 352.0, 61.5, 430.0, 242.0 ],
-									"text" : "cool -- the previous example is basically a stopwatch, which isn't immediately that useful. But we need ways to structure events over time since gen~. \n\nYou can always use GlobalTransport, midi controllers, etc. with Gen~ -- there's no need to do all your event scaffolding in gen~ (unless you are loading this onto a microcontroller). \n\nHowever,  having minute control over events (say the envelope of a sound or the structure of synthesis) is something we want to use these structures for pretty much always. \n\nSo let's build a phasor. if we replace the \"round\" with a [wrap 0 1] operator, we create a loop. "
+									"patching_rect" : [ 352.0, 61.5, 434.0, 242.0 ],
+									"text" : "cool -- the previous example is basically a stopwatch, which isn't immediately that useful. But we need ways to structure events over time since gen~ is operating one sample at a time.\n\nYou can always use GlobalTransport, midi controllers, etc. with Gen~ -- there's no need to do all your event scaffolding in gen~ (unless you are loading this onto a microcontroller). \n\nHowever,  having minute control over events (say the envelope of a sound or the structure of synthesis) is something we want to use these structures for pretty much always. \n\nSo let's build a phasor. if we replace the \"round\" with a [wrap 0 1] operator, we create a loop. "
 								}
 
 							}
@@ -1068,8 +1066,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 146.0, 190.0, 143.0, 22.0 ],
-									"text" : "out 1 @name samplerate"
+									"patching_rect" : [ 146.0, 190.0, 98.0, 22.0 ],
+									"text" : "out 1 samplerate"
 								}
 
 							}
@@ -1106,8 +1104,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 343.0, 33.0, 426.0, 242.0 ],
-									"text" : "ok that was helpful -- and we will see how this [counter] like structure can be extremely helpful for scaffolding events over time. To that end it'd be nice if we could perhaps *reset* our counter. So we need to rebuild [elapsed] with a reset function. Np.\n\nenter: [accum]. Notice inlet one takes a value to be added. In our case, we want to add one per sample, so we use one (coders, think i++). \n\ninlet two takes a value and will reset when it gets a value which is non-zero. you can thing of this like a [bang] for a single sample. See how we use [click~] outside to gen~ to create a reset manually, but you could imagine this being a part of an automated process as well."
+									"patching_rect" : [ 343.0, 33.0, 433.0, 242.0 ],
+									"text" : "ok that was helpful -- and we will see how this [counter] like structure can be extremely helpful for scaffolding events over time. To that end it'd be nice if we could perhaps *reset* our counter. So we need to rebuild [elapsed] with a reset function. Np.\n\nenter: [accum]. Notice inlet one takes a value to be added. In our case, we want to add one per sample, so we use one (coders, think i++). \n\nThe right inlet of the [accum] operator takes a value and will reset when it gets a value which is non-zero. you can thing of this like a [bang] for a single sample. See how we use [click~] outside to gen~ to create a reset manually, but you could imagine this being a part of an automated process as well."
 								}
 
 							}
@@ -1311,7 +1309,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 457.0, 98.0, 106.0, 78.0 ],
-					"presentation_linecount" : 4,
 					"text" : "note, dsp must be *on* for gen~ to run"
 				}
 
@@ -1360,22 +1357,6 @@
 					"outlettype" : [ "int", "float", "int", "int" ],
 					"patching_rect" : [ 574.0, 175.0, 61.0, 22.0 ],
 					"text" : "dspstate~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-21",
-					"maxclass" : "number~",
-					"mode" : 2,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 866.0, -127.0, 56.0, 22.0 ],
-					"sig" : 0.0
 				}
 
 			}
@@ -1477,8 +1458,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.0, 234.0, 143.0, 22.0 ],
-									"text" : "out 1 @name samplerate"
+									"patching_rect" : [ 25.0, 234.0, 98.0, 22.0 ],
+									"text" : "out 1 samplerate"
 								}
 
 							}
@@ -1828,29 +1809,29 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
-				"patcherrelativepath" : "../Documents/_CCAM/Design/_logos",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
+				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}

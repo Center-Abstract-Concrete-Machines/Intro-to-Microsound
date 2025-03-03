@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 514.0, 301.0, 909.0, 892.0 ],
+		"rect" : [ 848.0, 120.0, 578.0, 556.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -67,7 +67,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 59.0, 107.0, 1079.0, 572.0 ],
+						"rect" : [ 59.0, 107.0, 526.0, 292.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -375,7 +375,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 59.0, 107.0, 614.0, 396.0 ],
+						"rect" : [ 59.0, 107.0, 414.0, 225.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -432,7 +432,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.568631291389465, 21.568628132343292, 150.0, 144.0 ],
+									"patching_rect" : [ 121.568631291389465, 21.568628132343292, 152.0, 144.0 ],
 									"text" : "remember this formulation for a phasor / sawtooth / ramp? well, as it turns out, there's actually a phasor object you can use as well. I usually use that :) but it's good to know how to build things up from scratch since that is the ethos of gen~ a bit"
 								}
 
@@ -603,22 +603,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-21",
-					"maxclass" : "number~",
-					"mode" : 2,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1004.666696608066559, -141.333337545394897, 56.0, 22.0 ],
-					"sig" : 0.0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Bahnschrift",
 					"fontsize" : 48.0,
 					"id" : "obj-3",
@@ -680,7 +664,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "CCAM - white.png",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 

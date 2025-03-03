@@ -2,7 +2,7 @@
 	"name" : "Intro-to-Microsound",
 	"version" : 1,
 	"creationdate" : 3822669759,
-	"modificationdate" : 3823183371,
+	"modificationdate" : 3823803670,
 	"viewrect" : [ 286.0, 128.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -36,7 +36,7 @@
 				"local" : 1
 			}
 ,
-			"1.6envelopes.maxpat" : 			{
+			"1.6-envelopes.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

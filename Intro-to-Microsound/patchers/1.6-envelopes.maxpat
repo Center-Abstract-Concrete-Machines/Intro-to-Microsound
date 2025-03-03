@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1213.0, 610.0 ],
+		"rect" : [ 636.0, 316.0, 935.0, 555.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 279.0, 276.0, 84.0, 22.0 ],
+					"text" : "loadmess -50."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "button",
@@ -91,7 +103,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 59.0, 107.0, 600.0, 450.0 ],
+						"rect" : [ 59.0, 107.0, 348.0, 508.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -126,7 +138,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 82.0, 316.0, 263.0, 22.0 ],
+									"patching_rect" : [ 40.0, 274.0, 263.0, 22.0 ],
 									"text" : "param dutyCycle @min 0 @max 1 @default 0.5"
 								}
 
@@ -138,8 +150,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 142.0, 343.0, 79.0, 131.0 ],
-									"presentation_linecount" : 9,
+									"patching_rect" : [ 100.0, 301.0, 80.0, 131.0 ],
 									"text" : "this is a typical hamming window forumalation (borrowed from GSOT by Wakefield and Taylor)"
 								}
 
@@ -147,11 +158,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"linecount" : 12,
+									"linecount" : 11,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 143.0, 88.0, 77.0, 172.0 ],
+									"patching_rect" : [ 101.0, 46.0, 82.0, 158.0 ],
 									"text" : "reconstructor a phasor we can trigger (does not loop). Reset from input 1 resets. Clip keeps the range between 0 and 1"
 								}
 
@@ -163,7 +174,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 216.0, 75.0, 22.0 ],
+									"patching_rect" : [ 11.0, 174.0, 75.0, 22.0 ],
 									"text" : "/ samplerate"
 								}
 
@@ -175,7 +186,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 116.0, 75.0, 22.0 ],
+									"patching_rect" : [ 11.0, 74.0, 75.0, 22.0 ],
 									"text" : "/ samplerate"
 								}
 
@@ -187,7 +198,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 251.0, 47.0, 22.0 ],
+									"patching_rect" : [ 11.0, 209.0, 47.0, 22.0 ],
 									"text" : "clip 0 1"
 								}
 
@@ -199,7 +210,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 88.0, 70.0, 22.0 ],
+									"patching_rect" : [ 11.0, 46.0, 70.0, 22.0 ],
 									"text" : "mstosamps"
 								}
 
@@ -211,7 +222,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 187.0, 69.0, 22.0 ],
+									"patching_rect" : [ 11.0, 145.0, 69.0, 22.0 ],
 									"text" : "accum"
 								}
 
@@ -223,7 +234,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 55.0, 304.0, 22.0 ],
+									"patching_rect" : [ 11.0, 13.0, 304.0, 22.0 ],
 									"text" : "param windowSize @min 0 @max 2000 @default 1000"
 								}
 
@@ -235,7 +246,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 155.0, 28.0, 22.0 ],
+									"patching_rect" : [ 61.0, 113.0, 28.0, 22.0 ],
 									"text" : "in 1"
 								}
 
@@ -247,7 +258,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 350.0, 48.0, 22.0 ],
+									"patching_rect" : [ 11.0, 308.0, 48.0, 22.0 ],
 									"text" : "triangle"
 								}
 
@@ -258,7 +269,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 494.0, 88.0, 22.0 ],
+									"patching_rect" : [ 11.0, 452.0, 88.0, 22.0 ],
 									"text" : "out 1 hamming"
 								}
 
@@ -270,7 +281,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 465.0, 62.0, 22.0 ],
+									"patching_rect" : [ 11.0, 423.0, 62.0, 22.0 ],
 									"text" : "+ 0.53836"
 								}
 
@@ -282,7 +293,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 438.0, 64.0, 22.0 ],
+									"patching_rect" : [ 11.0, 396.0, 64.0, 22.0 ],
 									"text" : "* -0.46164"
 								}
 
@@ -294,7 +305,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 408.0, 27.0, 22.0 ],
+									"patching_rect" : [ 11.0, 366.0, 27.0, 22.0 ],
 									"text" : "cos"
 								}
 
@@ -306,7 +317,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 378.0, 26.0, 22.0 ],
+									"patching_rect" : [ 11.0, 336.0, 26.0, 22.0 ],
 									"text" : "* pi"
 								}
 
@@ -406,8 +417,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 610.0, 455.0, 132.0, 22.0 ],
-					"text" : "gen~ hamming-window"
+					"patching_rect" : [ 610.0, 455.0, 166.0, 22.0 ],
+					"text" : "gen~ @title hamming-window"
 				}
 
 			}
@@ -1359,7 +1370,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 156.0, 443.0, 386.0, 34.0 ],
+					"patching_rect" : [ 148.000002861022949, 505.875423399242209, 386.0, 34.0 ],
 					"text" : "developed Winter/Spring 2025 by Garrett Laroy Johnson for Intro to Microsound at Experimental Sound Studio, Chicago "
 				}
 
@@ -1373,7 +1384,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 15.0, 419.0, 121.0, 58.24915445321308 ],
+					"patching_rect" : [ 7.000002861022949, 481.875423399242209, 121.0, 58.24915445321308 ],
 					"pic" : "C:/Users/garre/OneDrive/Documents/_CCAM/Design/_logos/CCAM - white.png"
 				}
 
@@ -1542,6 +1553,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -1651,8 +1669,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
-				"patcherrelativepath" : "../Documents/_CCAM/Design/_logos",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
+				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
