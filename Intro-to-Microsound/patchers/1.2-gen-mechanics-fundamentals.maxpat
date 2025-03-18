@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 134.0, 874.0, 641.0 ],
+		"rect" : [ 593.0, 134.0, 874.0, 641.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,92 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "live.scope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 263.333341181278229, 380.0, 184.0, 68.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 318.000009477138519, 380.000011324882507, 190.666672348976135, 34.0 ],
+					"text" : "live.scope~\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 263.333341181278229, 342.5, 81.0, 22.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 239.333340466022491, 264.00000786781311, 50.0, 22.0 ],
+					"text" : "bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 208.000006198883057, 256.666674315929413, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 161.5, 215.5, 119.0, 22.0 ],
+					"text" : "metro 500 @active 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 115.333336770534515, 266.000007927417755, 50.0, 22.0 ],
+					"text" : "bang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-91",
 					"maxclass" : "newobj",
@@ -880,7 +966,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 21.0, 213.0, 24.0, 24.0 ]
+					"patching_rect" : [ 25.0, 225.333340048789978, 24.0, 24.0 ]
 				}
 
 			}
@@ -907,7 +993,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 189.0, 350.0, 81.0, 22.0 ],
+					"patching_rect" : [ 165.333338260650635, 367.333344280719757, 81.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -962,7 +1048,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 109.0, 157.0, 799.0, 326.0 ],
+						"rect" : [ 135.0, 84.0, 843.0, 601.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1378,7 +1464,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 109.0, 157.0, 621.0, 424.0 ],
+						"rect" : [ 369.0, 139.0, 621.0, 424.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1627,6 +1713,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-66", 2 ]
 				}
@@ -1655,7 +1757,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"order" : 0,
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
+					"order" : 1,
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -1809,8 +1920,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
+				"patcherrelativepath" : "../../../../../_CCAM/Design/_logos",
 				"type" : "PNG",
 				"implicit" : 1
 			}

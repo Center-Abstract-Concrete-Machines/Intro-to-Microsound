@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 134.0, 1213.0, 610.0 ],
+		"rect" : [ -196.0, 129.0, 1213.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -198,7 +198,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "Data scale(7);\r\npol = 1;\r\n// most programmers will find this structure \r\n//to be really despicable, so you're in good company. \r\n// fill scale Data object (an array) with references\r\n// Array notation and Data in Gen start with index 0.\r\n// poke takes args: dataname, value to write, index\r\npoke(scale,0,0); // first scale degree is 0\r\npoke(scale,2,1); // second scale degree is 2 (major second)\r\npoke(scale,3,2); // third scale degree is 4 (minor third)\r\npoke(scale,5,3); // fourth scale degree is 5 (p fourth)\r\npoke(scale,7,4); // fifth scale degree is 7 (p fifth)\r\npoke(scale,9,5); // sixth scale degree is 9 (sharp sixth --> dorian)\r\npoke(scale,10,6); // seventh scale degree is 10 (flat seventh --> dorian)\r\npoke(scale,12,7); // seventh scale degree is 10 (flat seventh --> dorian)\r\n\r\n\r\n // remember whether our input is positive or negative.\r\n if(in1 >= 0){\r\n pol = 1; \r\n }\r\n else{\r\n pol = -1;\t\r\n }\r\n// create a variable that holds the index value which is made positive. \r\n// For negative values, we going invert their order\r\nif (pol < 1){\r\n\tindex = 7 - in1; \r\n\t}\r\n\t\r\nelse {\r\n\tindex = in1;\r\n\t}\r\n\r\nnoteOut = peek(scale,index);\r\n\r\nout1 = noteOut * pol;\r\n\r\n\r\n\r\n\r\n",
+									"code" : "Data scale(7);\r\npol = 1;\r\n// most programmers will find this structure \r\n//to be really despicable, so you're in good company. \r\n// fill scale Data object (an array) with references\r\n// Array notation and Data in Gen start with index 0.\r\n// poke takes args: dataname, value to write, index\r\npoke(scale,0,0); // first scale degree is 0\r\npoke(scale,2,1); // second scale degree is 2 (major second)\r\npoke(scale,4,2); // third scale degree is 4 (minor third)\r\npoke(scale,5,3); // fourth scale degree is 5 (p fourth)\r\npoke(scale,7,4); // fifth scale degree is 7 (p fifth)\r\npoke(scale,9,5); // sixth scale degree is 9 (sharp sixth --> dorian)\r\npoke(scale,10,6); // seventh scale degree is 10 (flat seventh --> dorian)\r\npoke(scale,12,7); // seventh scale degree is 10 (flat seventh --> dorian)\r\n\r\n\r\n // remember whether our input is positive or negative.\r\n if(in1 >= 0){\r\n pol = 1; \r\n }\r\n else{\r\n pol = -1;\t\r\n }\r\n// create a variable that holds the index value which is made positive. \r\n// For negative values, we going invert their order\r\nif (pol < 1){\r\n\tindex = 7 - in1; \r\n\t}\r\n\t\r\nelse {\r\n\tindex = in1;\r\n\t}\r\n\r\nnoteOut = peek(scale,index);\r\n\r\nout1 = noteOut * pol;\r\n\r\n\r\n\r\n\r\n",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -1125,7 +1125,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 202.0, 407.0, 1008.0, 401.0 ],
+						"rect" : [ 27.0, 27.0, 1069.0, 641.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1208,7 +1208,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.5, 171.0, 153.0, 255.0 ],
+									"patching_rect" : [ 362.5, 171.0, 155.0, 255.0 ],
 									"text" : "an easy way to step tones is to use MIDI values (sorry, Buchla, Partch, la monte..., we will get out of this zone in later weeks). Yes, this means 12-tone scale. so we can multiple by 12 and a range of -1 to 1 becomes -12 to 12. Let's add some values to that so we can get closer to middle C, then we round down to the nearest tone.\n\nThen, [mtof] operator transforms a MIDI value into a Hz frequency that [phasor] will understand."
 								}
 
@@ -2263,7 +2263,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 559.0, 96.0, 134.0, 50.0 ],
+									"patching_rect" : [ 559.0, 96.0, 135.0, 50.0 ],
 									"text" : "param windowDuration @min 0 @max 1 @default 0.5"
 								}
 
@@ -3199,8 +3199,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
+				"patcherrelativepath" : "../../../../../_CCAM/Design/_logos",
 				"type" : "PNG",
 				"implicit" : 1
 			}

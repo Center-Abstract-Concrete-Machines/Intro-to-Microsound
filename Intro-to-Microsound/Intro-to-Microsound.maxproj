@@ -2,8 +2,8 @@
 	"name" : "Intro-to-Microsound",
 	"version" : 1,
 	"creationdate" : 3822669759,
-	"modificationdate" : 3823803670,
-	"viewrect" : [ 286.0, 128.0, 300.0, 500.0 ],
+	"modificationdate" : 3825177944,
+	"viewrect" : [ -546.0, 263.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -54,6 +54,42 @@
 			"1.9-sequence.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"gen-poly.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.1-buffers-playback.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.2-buffers-psuedograins.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.3-buffers-glitch.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.4-train-rect.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.5-granular-overlap-add-codebox.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.6-midi.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.7-polyphony.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"2.8-rain.maxpat" : 			{
+				"kind" : "patcher"
 			}
 
 		}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 340.0, 159.0, 856.0, 610.0 ],
+		"rect" : [ 34.0, 77.0, 898.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-28",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 659.333352982997894, 272.666674792766571, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 651.333352744579315, 307.333342492580414, 61.0, 22.0 ],
+					"text" : "rateHz $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "live.scope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 308.666675865650177, 341.0, 116.0, 43.0 ],
+					"range" : [ 0.0, 11.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "live.scope~",
@@ -175,7 +212,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 128.0, 84.0, 1002.0, 601.0 ],
+						"rect" : [ 176.0, 313.0, 1002.0, 601.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -391,7 +428,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 656.0, 666.0, 263.0, 34.0 ],
+									"patching_rect" : [ 656.0, 666.0, 267.0, 34.0 ],
 									"text" : "scale the envelope duration to a ratio parameter (shorter or longer)"
 								}
 
@@ -893,8 +930,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 42.0, 113.0, 84.0, 22.0 ],
-									"text" : "phasor rateHz"
+									"patching_rect" : [ 42.0, 113.0, 148.0, 22.0 ],
+									"text" : "phasor rateHz / numSteps"
 								}
 
 							}
@@ -1483,7 +1520,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 179.0, 378.0, 116.0, 43.0 ]
+					"patching_rect" : [ 170.0, 379.0, 116.0, 43.0 ]
 				}
 
 			}
@@ -1518,7 +1555,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 176.0, 331.0, 116.0, 43.0 ]
+					"patching_rect" : [ 179.0, 330.0, 116.0, 43.0 ]
 				}
 
 			}
@@ -1589,8 +1626,8 @@
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "signal", "signal", "signal" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "signal", "signal" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -1602,7 +1639,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 10.0, 248.0, 1040.0, 509.0 ],
+						"rect" : [ 200.0, 147.0, 1040.0, 498.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1631,6 +1668,17 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 46.400000691413879, 311.200004637241364, 35.0, 22.0 ],
+									"text" : "out 4"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-61",
 									"maxclass" : "newobj",
@@ -1974,31 +2022,6 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"id" : "obj-63",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1181.0, 601.0, 25.0, 22.0 ],
-									"text" : "!/ 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-31",
-									"linecount" : 4,
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1177.0, 523.0, 128.0, 64.0 ],
-									"text" : "param windowDuration @min 0 @max 1 @default 0.5"
-								}
-
-							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -2032,13 +2055,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-63", 0 ],
-									"source" : [ "obj-31", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-30", 1 ],
 									"source" : [ "obj-32", 0 ]
 								}
@@ -2055,6 +2071,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-38", 0 ],
 									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"order" : 2,
+									"source" : [ "obj-38", 0 ]
 								}
 
 							}
@@ -2420,6 +2444,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-48", 0 ]
 				}
@@ -2436,6 +2474,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-52", 3 ]
 				}
 
 			}
@@ -2523,8 +2568,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
+				"patcherrelativepath" : "../../../../../_CCAM/Design/_logos",
 				"type" : "PNG",
 				"implicit" : 1
 			}

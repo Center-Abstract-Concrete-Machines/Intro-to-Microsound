@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 134.0, 768.0, 607.0 ],
+		"rect" : [ 224.0, 84.0, 1023.0, 601.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,129 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 51.0, 254.5, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 43.5, 283.0, 93.0, 22.0 ],
+					"text" : "prepend maxHz"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 51.0, 298.5, 150.0, 20.0 ],
+					"text" : "attrui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-40",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 616.5, 210.00000125169754, 99.5, 22.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 798.0, 377.0, 32.0, 22.0 ],
+					"text" : "+ 60"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "kslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 805.5, 410.5, 336.0, 53.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 738.0, 226.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 748.0, 445.0, 50.0, 22.0 ],
+					"text" : "67"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 722.0, 335.0, 66.0, 22.0 ],
+					"text" : "random 12"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 722.0, 295.0, 119.0, 22.0 ],
+					"text" : "metro 200 @active 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
@@ -616,7 +739,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 592.0, 209.0, 515.0, 401.0 ],
+						"rect" : [ 222.0, 117.0, 817.0, 559.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -747,7 +870,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 205.0, 105.0, 244.0, 227.0 ],
+									"patching_rect" : [ 205.0, 105.0, 247.0, 227.0 ],
 									"text" : "OK, let's put it together. we want a random 'interval' at a random interval. \n\n[noise] operator outputs values between -1 and 1. so we need to scale them for something that is useful to [phasor].\n\nHowever, we see if we try to hookup the output of latch to scale, it won't let us. that's because all gen operators run at the same time, so we would have a feedback loop. \n\nWe need to stagger this randomized data by one timestep. In other words, to remember the value from before. We can do that with the [history] operator!"
 								}
 
@@ -958,7 +1081,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 304.0, 187.0, 414.0, 246.0 ],
+						"rect" : [ 35.0, 84.0, 570.0, 601.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -992,7 +1115,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 171.0, 111.0, 35.0, 22.0 ],
+									"patching_rect" : [ 171.0, 117.0, 35.0, 22.0 ],
 									"text" : "out 5"
 								}
 
@@ -1015,7 +1138,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 115.0, 89.0, 28.0, 22.0 ],
+									"patching_rect" : [ 114.0, 85.0, 28.0, 22.0 ],
 									"text" : "abs"
 								}
 
@@ -1074,7 +1197,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 209.0, 12.0, 162.0, 186.0 ],
+									"patching_rect" : [ 209.0, 12.0, 164.0, 186.0 ],
 									"text" : "what if we want this to be automated? no prob. Here is a really really useful gen structure. Following Taylor and Wakefield, \"ramps\" are an extremely useful way of structuring events in time.\n\nhere we look at the slope or difference of a phasor ramp. when that difference or delta jumps, we detect that with a condition and trigger a latch."
 								}
 
@@ -1307,11 +1430,11 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-7",
-									"linecount" : 9,
+									"linecount" : 8,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 196.0, 41.0, 158.0, 131.0 ],
+									"patching_rect" : [ 196.0, 41.0, 162.0, 117.0 ],
 									"text" : "latch is our friend here.\n\nlatch allows us to \"sample\" and \"hold\" a value at a given moment. In the case of gen~ that moment can be an external  trigger or a trigger from some internal process."
 								}
 
@@ -1500,7 +1623,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 24.0, 164.0, 200.0 ],
+									"patching_rect" : [ 90.0, 24.0, 165.0, 200.0 ],
 									"text" : "one issue is that there is no \"random\" operator, instead we had a noise function. You can think of this like \"white noise\". Of course when we think of white noise, we think of a continuous stream of audio. How to we derive one number from this that might correspond to frequency or interval?\n\nright now, we are drinking from the noise firehose!"
 								}
 
@@ -1565,7 +1688,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 15.0, 197.0, 96.000002861022949, 42.00000125169754 ]
+					"patching_rect" : [ 36.0, 198.75, 96.000002861022949, 42.00000125169754 ]
 				}
 
 			}
@@ -1673,6 +1796,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
+					"order" : 1,
 					"source" : [ "obj-13", 3 ]
 				}
 
@@ -1681,6 +1805,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-13", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"order" : 0,
+					"source" : [ "obj-13", 3 ]
 				}
 
 			}
@@ -1710,6 +1842,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
@@ -1767,8 +1906,45 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"order" : 1,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 0,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -1803,8 +1979,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCAM - white.png",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Library/Intro-to-Microsound/Intro-to-Microsound/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/OneDrive/Documents/_CCAM/Design/_logos",
+				"patcherrelativepath" : "../../../../../_CCAM/Design/_logos",
 				"type" : "PNG",
 				"implicit" : 1
 			}
