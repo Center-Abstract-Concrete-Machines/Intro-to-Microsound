@@ -6,7 +6,7 @@ Intro  to Microsound is a 4-session course introducing students to the Gen~  pro
 
 In the course of 4 weeks, we will go from constructing  sound one single sample at a time to diffusing dynamic and long-form  sonic textures via microsound techniques such as granular and pulsar  synthesis. We will also discuss multichannel and hardware applications  (e.g. mc.gen~ and OopsyDaisy).
 
-This  course serves as a technical introduction to Gen~ couched in the  environment’s conceptual strengths: microsound and processual  composition. We welcome both experienced sound programmers as well as  brave newcomers; both will walk about with new techniques and new ways  of thinking about working with sound.
+This course serves as a technical introduction to Gen~ couched in the  environment’s conceptual strengths: microsound and processual  composition. We welcome both experienced sound programmers as well as  brave newcomers; both will walk about with new techniques and new ways  of thinking about working with sound.
 
 Students will download a  custom code library developed to speed up iteration. It will include  examples that you'll be invited to study ahead of class. It will also  include some custom operators (you may know this as abstractions or  objects in Max/MSP or functions in programming languages).
 
