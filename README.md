@@ -1,4 +1,4 @@
-| “Beneath the level of the note lies the realm of microsound, of sound particles. Microsonic particles remained invisible for centuries. Recent technological advances let us probe and explore the beauties of this formerly unseen world. Microsonic techniques dissolve the rigid bricks of musical architecture – the notes – into a more fluid and supple medium. Sound may coalesce, evaporate, or mutate into other sounds.” - Curtis Roads, Microsound (2001)
+> “Beneath the level of the note lies the realm of microsound, of sound particles. Microsonic particles remained invisible for centuries. Recent technological advances let us probe and explore the beauties of this formerly unseen world. Microsonic techniques dissolve the rigid bricks of musical architecture – the notes – into a more fluid and supple medium. Sound may coalesce, evaporate, or mutate into other sounds.” - Curtis Roads, Microsound (2001)
 
 What does a 41000th of a second sound like?
 
