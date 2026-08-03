@@ -2,8 +2,8 @@
 	"name" : "Intro-to-Microsound",
 	"version" : 1,
 	"creationdate" : 3822669759,
-	"modificationdate" : 3825177944,
-	"viewrect" : [ -546.0, 263.0, 300.0, 500.0 ],
+	"modificationdate" : 3825495048,
+	"viewrect" : [ 330.0, 135.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -90,6 +90,11 @@
 ,
 			"2.8-rain.maxpat" : 			{
 				"kind" : "patcher"
+			}
+,
+			"envelope-follower-synthy.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
