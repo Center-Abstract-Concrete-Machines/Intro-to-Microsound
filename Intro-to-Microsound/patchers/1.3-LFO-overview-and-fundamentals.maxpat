@@ -9,8 +9,20 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 145.0, -994.0, 1254.0, 926.0 ],
+        "rect": [ 33.0, -1084.0, 1980.0, 1050.0 ],
         "boxes": [
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-3",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 461.50001388788223, 276.0, 50.0, 22.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-44",
@@ -34,8 +46,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 291.0, 275.0, 143.0, 140.0 ],
-                    "presentation_linecount": 19,
+                    "patching_rect": [ 250.66667413711548, 275.0, 145.0, 140.0 ],
                     "text": "notice that active external input signals override @attribute / param settings. (output is 4hz not 2hz). unpatch or switch the input to zero and it reverts to internal clock"
                 }
             },
@@ -46,7 +57,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 466.0, 286.0, 41.0, 22.0 ],
+                    "patching_rect": [ 466.00001388788223, 303.3333423733711, 41.0, 22.0 ],
                     "text": "sig~ 4"
                 }
             },
@@ -72,7 +83,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 690.0, 444.0, 189.0, 94.0 ],
-                    "presentation_linecount": 10,
                     "text": "in live.scope, higher frequencies appear to distory the waveform. this is due to the \"smoothing\" paramager of [live.scope]. Turn it off to double check."
                 }
             },
@@ -180,8 +190,8 @@
                     "linecount": 2,
                     "maxclass": "newobj",
                     "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
+                    "numoutlets": 2,
+                    "outlettype": [ "signal", "signal" ],
                     "patching_rect": [ 657.0, 340.0, 222.0, 36.0 ],
                     "text": "gen~ ccam.lfo @Hz 8 @polarity 1 @dutyCycle 0.25"
                 }
@@ -467,8 +477,8 @@
                     "linecount": 3,
                     "maxclass": "newobj",
                     "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
+                    "numoutlets": 2,
+                    "outlettype": [ "signal", "signal" ],
                     "patching_rect": [ 431.0, 340.0, 136.0, 50.0 ],
                     "text": "gen~ ccam.lfo @Hz 2 @wave 1 @dutyCycle 0.75"
                 }
@@ -1128,6 +1138,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-40", 0 ],
+                    "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-32", 0 ],
                     "source": [ "obj-31", 0 ]
                 }
@@ -1174,12 +1190,6 @@
                     "destination": [ "obj-83", 1 ],
                     "order": 1,
                     "source": [ "obj-39", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-15", 0 ],
-                    "source": [ "obj-40", 0 ]
                 }
             },
             {
@@ -1237,6 +1247,14 @@
         "parameters": {
             "obj-38": [ "live.menu[1]", "live.menu", 0 ],
             "obj-89": [ "live.gain~", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

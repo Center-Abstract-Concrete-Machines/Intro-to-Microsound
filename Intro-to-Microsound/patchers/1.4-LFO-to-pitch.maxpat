@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 33.0, -1084.0, 1574.0, 1050.0 ],
+        "rect": [ 130.0, 131.0, 1575.0, 1052.0 ],
         "boxes": [
             {
                 "box": {
@@ -40,8 +40,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 178.0, 547.0, 94.0, 34.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 650.0, 51.5, 94.0, 34.0 ],
                     "text": "normalized 0-1 output"
                 }
             },
@@ -141,7 +140,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1206.0, 681.0, 94.0, 34.0 ],
-                    "presentation_linecount": 2,
                     "text": "normalized 0-1 output"
                 }
             },
@@ -552,7 +550,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 63.0, 501.5, 57.0, 48.0 ],
-                    "presentation_linecount": 2,
                     "text": "output as step integers"
                 }
             },
@@ -574,7 +571,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 256.5, 168.0, 81.0, 34.0 ],
+                    "patching_rect": [ 262.0, 168.0, 81.0, 34.0 ],
                     "text": "wave 3 : \ntriangle out"
                 }
             },
@@ -744,8 +741,9 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 48.5, 167.0, 208.0, 36.0 ],
-                    "text": "gen~ ccam.lfo @polarity 1 @wave 3 @dutyCycle 0.25 @hz 0.15"
+                    "patching_rect": [ 49.0, 167.0, 206.0, 36.0 ],
+                    "presentation_linecount": 2,
+                    "text": "gen~ ccam.lfo @polarity 1 @wave 3 @dutyCycle 0.25 @Hz 0.15"
                 }
             },
             {
@@ -988,7 +986,7 @@
                     "offset": 60,
                     "outlettype": [ "int", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 820.0, 227.0, 456.0, 53.0 ],
+                    "patching_rect": [ 820.0, 227.0, 444.0, 53.0 ],
                     "range": 64
                 }
             },
@@ -1055,7 +1053,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "signal", "signal", "signal" ],
-                    "patching_rect": [ 50.0, 467.0, 181.0, 22.0 ],
+                    "patching_rect": [ 50.0, 466.0, 181.0, 22.0 ],
                     "text": "gen~ ccam.quantizer @steps 12"
                 }
             },
@@ -1130,7 +1128,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 710.0, 199.0, 150.0, 22.0 ]
+                    "patching_rect": [ 616.0, 168.0, 150.0, 22.0 ]
                 }
             },
             {
@@ -1375,7 +1373,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-68", 0 ],
-                    "midpoints": [ 59.5, 718.7999877929688, 77.19999694824219, 788.4000244140625, 194.8000030517578, 788.4000244140625, 294.79998779296875, 775.5999755859375, 316.3999938964844, 661.2000122070312, 316.3999938964844, 588.4000244140625, 354.79998779296875, 482.79998779296875, 354.79998779296875, 397.20001220703125, 370.79998779296875, 345.20001220703125, 385.20001220703125, 215.60000610351562, 382.0, 152.39999389648438, 382.0, 101.19999694824219, 406.79998779296875, 81.19999694824219 ],
+                    "midpoints": [ 59.5, 718.7999877929688, 77.19999694824219, 788.4000244140625, 194.8000030517578, 788.4000244140625, 294.79998779296875, 775.5999755859375, 316.3999938964844, 661.2000122070312, 316.3999938964844, 588.4000244140625, 354.79998779296875, 482.79998779296875, 354.79998779296875, 397.20001220703125, 370.79998779296875, 345.20001220703125, 385.20001220703125, 215.60000610351562, 385.20001220703125, 152.39999389648438, 385.20001220703125, 101.19999694824219, 406.79998779296875, 81.19999694824219 ],
                     "order": 0,
                     "source": [ "obj-2", 0 ]
                 }
@@ -1587,6 +1585,14 @@
             "obj-14": [ "amxd~", "amxd~", 0 ],
             "obj-28": [ "live.gain~", "live.gain~", 0 ],
             "obj-95": [ "live.gain~[3]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
